@@ -9,10 +9,74 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262525;
+}
+
+.header {
+    background-color: #ef066b;
+    padding: 0.8rem;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* align-items:baseline; */
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative;
+    /* z-index: 2; */
+    /* min-height: 45px;  */
+}
+
+/* Example font styling for all anchor tags in the header */
+.header a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none; 
+    margin-right: 1rem;
+    align-items: center;
+}
+
+/* Optional: add hover effect for anchor tags */
+.header a:hover {
+    color: #262525; 
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.pic img {
+    position: relative;
+    width: 20vw;
+    height: 19rem;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #ef066b;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+img, svg {
+    vertical-align: middle;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.image {
+    margin-top: 6%;
+    text-align: center;
+}
 .port-cont {
     min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column; 
 }
 
 .leftcont, .rightcont {
@@ -54,11 +118,12 @@
 .content {
     text-align: center;
     color: white;
-    padding: 2rem;
+    padding: 2.2rem;
 }
 
 .content .intro {
-    font-size: 2.2rem;
+    margin-top: 20px;
+    font-size: 2rem;
 }
 
 .content .intro span {
@@ -69,20 +134,34 @@
     font-size: 2rem;
     color: #ef066b;
 }
-
+.content h1{
+    margin-top: 4%;
+}
 .content .detail {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     max-width: 90%;
     margin: 1.1rem 0 3rem 0;
-    line-height: 1.8rem;
+    line-height: 2.3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .skillset {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2%;
 }
-
+/* .detail{
+    margin-left: 17%;
+    color: #c0bebe;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 8px;
+    margin-right: 18%;
+    font-weight: 200;
+    max-width: 1000px;
+} */
 .skillset button {
     border: .1rem solid #e58fb4;
     font-size: 1.1rem;
@@ -99,7 +178,7 @@
     }
 
     .leftcont {
-        width: 80%;
+        width: 100%;
     }
 
     .rightcont {
@@ -111,20 +190,20 @@
 }
 
 @media (max-width: 769px) {
-    .port-cont {
+    /* .port-cont {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    .leftcont {
+    /* .leftcont {
         width: 100%;
-        height: 90%;
-    }
+        height: 100%;
+    } */
 
-    .rightcont {
+    /* .rightcont {
         width: 100%;
-        height: 10%;
-    }
+        height: 100%;
+    } */
 
     img {
         box-shadow: 0 0 20px #f6f1f4;
